@@ -1,0 +1,51 @@
+Company name is TechNova AI Solutions.
+TechNova AI Solutions was founded in 2021.
+TechNova AI Solutions is headquartered in Chennai, Tamil Nadu, India.
+TechNova AI Solutions specializes in building AI-powered software products for businesses.
+TechNova AI Solutions mission is to make AI accessible and affordable for every business.
+
+Our main product is called NovaAssist.
+NovaAssist is an AI-powered customer support automation platform.
+NovaAssist uses natural language processing to understand and respond to customer queries.
+NovaAssist supports English, Tamil, Hindi, and Telugu languages.
+NovaAssist can be integrated with websites, WhatsApp, and mobile apps.
+NovaAssist is available on web browsers and mobile devices.
+
+NovaAssist has three pricing plans.
+The Starter plan costs 999 rupees per month and supports up to 500 conversations.
+The Professional plan costs 2999 rupees per month and supports up to 5000 conversations.
+The Enterprise plan has custom pricing and supports unlimited conversations.
+All plans include a 14 day free trial with no credit card required.
+Annual billing gives a 20 percent discount on all plans.
+
+NovaAssist Starter plan includes basic AI responses and email support.
+NovaAssist Professional plan includes advanced AI, analytics dashboard, and priority support.
+NovaAssist Enterprise plan includes custom AI training, dedicated account manager, and SLA guarantee.
+
+The refund policy is 30 days money back guarantee on all plans.
+Customers can cancel their subscription anytime without penalty.
+Refunds are processed within 5 to 7 business days.
+
+Customer support is available Monday to Friday from 9 AM to 6 PM IST.
+Support email is support@technovaai.com.
+Sales email is sales@technovaai.com.
+Phone support is available at +91 98765 43210.
+Emergency technical support is available 24 hours for Enterprise customers.
+
+TechNova AI Solutions has a team of 45 employees.
+TechNova AI Solutions has served over 300 businesses across India.
+TechNova AI Solutions key industries are e-commerce, healthcare, education, and banking.
+TechNova AI Solutions raised 2 million dollars in seed funding in 2022.
+
+NovaAssist setup takes less than 30 minutes with no coding required.
+NovaAssist provides a drag and drop chatbot builder for easy customization.
+NovaAssist analytics dashboard shows conversation volumes, response accuracy, and customer satisfaction scores.
+NovaAssist integrates with Shopify, WooCommerce, Salesforce, and Zoho CRM.
+NovaAssist uses end to end encryption to protect all customer data.
+NovaAssist is compliant with GDPR and India PDPB data protection regulations.
+
+Common technical issue is chatbot not responding which can be fixed by clearing browser cache.
+Common technical issue is slow response time which is caused by high traffic and resolves automatically.
+Common technical issue is integration failure which requires regenerating the API key from the dashboard.
+Users can reset their password from the login page by clicking Forgot Password.
+Users can upgrade or downgrade their plan anytime from the billing section in dashboard.
