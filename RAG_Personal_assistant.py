@@ -107,53 +107,56 @@ chat_history=[system_prompt]
 print("Aiden your Personal Chat Assistant")
 print("Type EXIT to quit")
 
-while True:
-    user_input=input("You : ").strip()
+if __name__=="__main__":
+    print("Starting Aiden in terminal mode...")
 
-    if user_input.lower()=="exit":
-        print("Aiden: Goodbye! See you later")
-        break
-    if not user_input:
-        continue
+    while True:
+        user_input=input("You : ").strip()
+
+        if user_input.lower()=="exit":
+            print("Aiden: Goodbye! See you later")
+            break
+        if not user_input:
+            continue
     
-    retrieved_docs=retriever.invoke(user_input)
+        retrieved_docs=retriever.invoke(user_input)
 
-    context="\n".join([doc.page_content for doc in retrieved_docs])
+        context="\n".join([doc.page_content for doc in retrieved_docs])
 
-    history_str=""
-    for msg in chat_history[1:]:
-        if isinstance(msg,HumanMessage):
-            history_str+=f"Human:{msg.content}\n"
-        elif isinstance(msg,AIMessage):
-            history_str+=f"Assistant:{msg.content}\n"
+        history_str=""
+        for msg in chat_history[1:]:
+            if isinstance(msg,HumanMessage):
+                history_str+=f"Human:{msg.content}\n"
+            elif isinstance(msg,AIMessage):
+                history_str+=f"Assistant:{msg.content}\n"
 
-    full_input=f"""
+        full_input=f"""
     Previous conversation:{history_str}
     knowledge context(use if relevant, ignore if not):{context}
     current Question:{user_input}"""
 
-    chat_history.append(HumanMessage(content=user_input))
+        chat_history.append(HumanMessage(content=user_input))
 
-    try:
-        response=agent_executor.invoke({"input":full_input})
-        reply=response["output"]
+        try:
+            response=agent_executor.invoke({"input":full_input})
+            reply=response["output"]
 
-        if "Agent stopped" in reply:
-            raise ValueError("Agent hit itteration limit - fallback")
+            if "Agent stopped" in reply:
+                raise ValueError("Agent hit itteration limit - fallback")
 
-    except Exception as e:
-        print(f"\n Agent fallback activated")
+        except Exception as e:
+            print(f"\n Agent fallback activated")
 
-        fallback_input=f"""
+            fallback_input=f"""
     Use the context if it is relevant, ignore if it not:{context}
     Question:{user_input}"""
 
-        fallback_message=chat_history+[HumanMessage(content=fallback_input)]
-        fallback_response=llm.invoke(fallback_message)
-        reply=fallback_response.content
+            fallback_message=chat_history+[HumanMessage(content=fallback_input)]
+            fallback_response=llm.invoke(fallback_message)
+            reply=fallback_response.content
 
-    chat_history.append(AIMessage(content=reply))
+        chat_history.append(AIMessage(content=reply))
 
-    print(f"\nAiden : {reply}\n")
+        print(f"\nAiden : {reply}\n")
 
 

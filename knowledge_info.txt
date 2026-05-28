@@ -1,3 +1,5 @@
+This is a fictional company created for portfolio demonstration purposes only.
+
 Company name is TechNova AI Solutions.
 TechNova AI Solutions was founded in 2021.
 TechNova AI Solutions is headquartered in Chennai, Tamil Nadu, India.
@@ -27,9 +29,9 @@ Customers can cancel their subscription anytime without penalty.
 Refunds are processed within 5 to 7 business days.
 
 Customer support is available Monday to Friday from 9 AM to 6 PM IST.
-Support email is support@technovaai.com.
-Sales email is sales@technovaai.com.
-Phone support is available at +91 98765 43210.
+Support email is support@technovaai.example.
+Sales email is sales@technovaai.example.
+Phone support is available at +91 00000 00000.
 Emergency technical support is available 24 hours for Enterprise customers.
 
 TechNova AI Solutions has a team of 45 employees.
