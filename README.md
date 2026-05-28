@@ -4,6 +4,8 @@ A terminal-based conversational AI assistant built with LangChain,
 RAG, and AI Agents. It answers questions from a personal knowledge 
 base, searches the web, and performs calculations.
 
+**Live Demo:** [Click here to try Aiden](https://personal-ai-assistant-u5yyqbw5qzajjst3kji7kl.streamlit.app)
+
 ##  Tech Stack
 - Python 3.11
 - LangChain 0.3.7
